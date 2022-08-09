@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>megaFlix</title>
+        <!-- Icons -->
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div id="content" class="container-fluid">
+            <div
+                id="nav-menu"
+                class="row d-flex justify-content-end align-items-center"
+            >
+                <!-- Nav Row -->
+                <div id="logo-col" class="col-1 text-center">
+                    <!-- Logo -->
+                    <img
+                        id="logo"
+                        src="img/mega-flix-logo.png"
+                        alt="mega-flix logo"
+                    />
+                </div>
+                <!-- End Logo -->
+                <div id="browse" class="col-8 d-flex align-items-center d-sm-none">
+                    <label for="genre-select">Browse</label>
+
+                    <select name="browse" id="genre-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="home">Home</option>
+                        <option value="tv">TV Shows</option>
+                        <option value="movies">Movies</option>
+                        <option value="news">News & Popular</option>
+                        <option value="MyList">MyList</option>
+                        <option value="Audio">Audio & Subtitles</option>
+                    </select>
+                </div>
+                <div id="nav" class="col-8 d-none d-sm-block">
+                    <ul>
+                        <li>Home</li>
+                        <li>TV Shows</li>
+                        <li>Movies</li>
+                        <li>News & Popular</li>
+                        <li>MyList</li>
+                        <li>Audio & Subtitles</li>
+                    </ul>
+                </div>
+                <div id="tools" class="col-3">
+                    <ul
+                        id="tools-menu"
+                        class="d-flex justify-content-end align-items-center"
+                    >
+                        <li>
+                            <span class="material-icons search-icon"> search </span>
+                        </li>
+                        <li>Kids</li>
+                        <li>
+                            <span id="notifications" class="material-icons">
+                                notifications
+                            </span>
+                        </li>
+                        <li
+                            class="d-inline-flex justify-content-end align-items-center"
+                        >
+                            <img
+                                src="./img/user-icon.png"
+                                alt="user icon"
+                            /><span id="user-pulldown" class="material-icons">
+                                arrow_drop_down
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Nav Row -->
+            <div class="row" id="featured"> <!-- Featured Section -->
+                <div class="col-5 info"> <!-- Info Group -->
+                    <div class="n-series">
+                        <img
+                            class="netflix-N"
+                            src="./img/netflix-N.png"
+                            alt="letter N"
+                        />
+                        <span>SERIES</span>
+                    </div>
+                    <div class="title">BRIDGERTON</div>
+                    <div class="top-10">
+                        <img src="./img/netflix-top10-icon.png" alt="top 10" />
+                        <span>#2 in TV Shows Today</span>
+                    </div>
+                    <p class="summary">
+                        The eight close-knit siblings of the Bridgerton family
+                        look for love and happiness in London high society.
+                        Inspired by Julia Quinn's bestselling novels.
+                    </p>
+                    <div class="buttons">
+                        <button
+                            type="button"
+                            class="btn btn-light d-inline-flex align-items-center"
+                        >
+                            <span class="material-icons"> play_arrow </span>
+                            <span>Play</span>
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-secondary d-inline-flex align-items-center"
+                        >
+                            <span class="material-icons"> info </span>
+                            <span style="margin-left: 5px">More Info</span>
+                        </button>
+                    </div>
+                </div> <!-- End Info Group -->
+                
+                <div class="col-5">
+                    <!-- Spacer -->
+                </div>
+                <div class="col-2 rating-section"> <!-- Rating -->
+                    <div class="row text-start">
+                        <div class="col-3 refresh text-center">
+                            <span class="material-icons refresh-icon">
+                                refresh
+                            </span>
+                        </div>
+                        <div class="col-9 rating">TV-MA</div>
+                    </div>
+                </div>
+            </div> <!-- End Featured Section -->
+            <div id="browse-section"> <!-- Rows of Shows -->
+                <div class="row row-title">Released in the Past Year</div> 
+                <div class="row thumbnails"> <!-- Show Row -->
+                    <div class="col">
+                        <img
+                            src="./img/show1.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show2.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show3.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show4.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show5.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show7.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show9.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show25.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                </div> <!-- End Show Row -->
+                <div class="row row-title">Trending Now</div> 
+                <div class="row thumbnails"> <!-- Show Row -->
+                    <div class="col">
+                        <img
+                            src="./img/show9.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show10.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show11.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show12.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show13.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show14.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show15.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show24.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                </div> <!-- End Show Row -->
+                <div class="row row-title">Continue Watching for Quentin</div> 
+                <div class="row thumbnails"> <!-- Show Row -->
+                    <div class="col">
+                        <img
+                            src="./img/show16.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show17.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show18.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show19.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show20.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show21.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show22.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show23.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                </div> <!-- End Show Row -->
+                <div class="row row-title">Suggested Shows</div> 
+                <div class="row thumbnails"> <!-- Show Row -->
+                    <div class="col">
+                        <img
+                            src="./img/show26.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show27.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show28.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show29.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show30.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show31.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show32.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show33.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                </div> <!-- End Show Row -->
+                <div class="row row-title">Still Looking For Something To Watch, Huh?</div> 
+                <div class="row thumbnails"> <!-- Show Row -->
+                    <div class="col">
+                        <img
+                            src="./img/show34.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show35.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show36.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show37.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show38.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show39.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show40.webp"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="./img/show41.jpg"
+                            alt="movie thumbnail"
+                            class="thumbnail"
+                        />
+                    </div>
+                </div> <!-- End Show Row -->
+            </div> <!-- End Rows of Shows -->
+        </div> <!-- End Container -->
+        <div id="secret-message">
+            <p> <span class="surprise">SURPRISE!</span> <br />VIEWPORT IS VERY SMALL OR VERY LARGE<br/> <span class="small-print">This uses @media query and display:flex.</span></p>
+        </div>
+    </body>
+</html>

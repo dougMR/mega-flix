@@ -1,0 +1,198 @@
+/* div {
+    border: 1px solid orange;
+} */
+
+:root {
+    font-size: calc(4px + 1vw);
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+#content {
+    padding-right: 0;
+}
+/* 
+    Nav Header 
+*/
+#logo-col {
+    padding: 0.15em 0 0;
+}
+#logo{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+}
+
+#browse label {
+    padding: 0 1em;
+}
+
+#nav-menu {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+#nav-menu ul {
+    margin: 0;
+    padding: 0;
+}
+#nav-menu li {
+    display: inline-block;
+    padding: 0 6px;
+}
+#nav-menu .search-icon {
+    vertical-align: middle;
+}
+#notifications {
+    position: relative;
+    vertical-align: middle;
+}
+#notifications::before {
+    content: "9+";
+    color: white;
+    font-family: sans-serif;
+    font-size: 8px;
+    font-weight: 900;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    padding:0.3em;
+    right: -0.1rem;
+}
+#user-pulldown {
+    margin-left: -6px;
+}
+
+/* 
+    Big Show Top Area 
+*/
+#featured.row {
+    background-image: url(./img/cover.jpg);
+    background-size:cover;
+    box-shadow: inset 0 -20em 6em -10em #111;
+}
+#featured .info {
+    margin-top: 6rem;
+    margin-bottom: 14rem;
+}
+#featured .info .n-series span {
+    letter-spacing: 0.5em;
+    margin-left: 0.25em;
+}
+#featured .info .n-series img {
+    height: 2em;
+    width: auto;
+}
+#featured .info .title {
+    font-family: 'Cabin', sans-serif;
+    font-size: 4.5rem;
+    line-height: 0.9em;
+    margin-left: -0.2rem;
+}
+#featured .info .top-10 {
+    padding: 1rem 0;
+}
+#featured .info .top-10 img {
+    height: 1.5em;
+    width: auto;
+}
+#featured .info .top-10 span {
+    font-weight: bold;
+}
+#featured .info .summary {
+    line-height: 1.3em;
+}
+
+#featured .rating-section {
+    margin-top: 20rem;
+}
+#featured .rating-section span {
+    vertical-align: middle;
+}
+#featured .rating-section .refresh {
+    padding: 0;
+    margin:0;
+}
+#featured .rating-section .refresh-icon {
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.1em;
+}
+#featured .rating-section .rating {
+    border-left: 3px solid white;
+    background-color: rgba(20,20,20,0.5);
+    padding: 0.3em;
+    display: flex;
+    align-items: center;
+}
+
+/* 
+    Browse Rows 
+*/
+#browse-section {
+    margin-top: -9rem;
+}
+#browse-section .row-title {
+    padding-left: 0.7rem;
+}
+#browse-section .thumbnails {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 2.5rem;
+}
+#browse-section .thumbnails .col {
+    padding: 0;
+    margin-right: 4px;
+}
+#browse-section .thumbnails img {
+    width: 10rem;
+}
+/* 
+    SECRET MESSAGE
+*/
+#secret-message {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    
+    background-color: RGBA(0,0,0,0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+#secret-message p {
+    display: block;
+    /* border: 1px solid yellow; */
+    font-size: 5rem;
+    padding-bottom: 1em;
+    text-align: center;
+    text-shadow: 0 0 0.2em black;
+    font-weight: 900;
+    color: yellow;
+}
+#secret-message .small-print {
+    color: orange;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+#secret-message .surprise {
+    color: red;
+    font-size: 7rem;
+}
+@media (max-width: 450px), (min-width: 1400px){
+    #secret-message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
