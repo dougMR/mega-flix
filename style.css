@@ -189,7 +189,7 @@ body {
     color: red;
     font-size: 7rem;
 }
-@media (max-width: 450px), (min-width: 1400px){
+@media (max-width: 450px), (min-width: 1800px){
     #secret-message {
         display: flex;
         justify-content: center;
